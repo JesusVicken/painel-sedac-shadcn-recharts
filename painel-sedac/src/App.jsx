@@ -1,17 +1,25 @@
-import { Button } from "@/components/ui/button"
+import GraficoBarra from "./components/GraficoBarra"
+import ThemeToggle from "./components/ThemeToggle"
+import GraficoDonut from "./components/GraficoDonut"
+
 
 import './App.css'
 
-function App() {
-
+export function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-svh">
-        <Button>Click me</Button>
+
+      <div className="min-h-screen bg-background text-foreground p-6">
+        <div className="flex justify-end mb-4">
+          <ThemeToggle />
+        </div>
+        <div className="flex justify-center">
+          <GraficoDonut />
+        </div>
       </div>
     </>
   )
 }
 
-export default App
+
